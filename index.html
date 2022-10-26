@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/tablaDinamica.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Parcial I LabIII Orpelli Renzo</title>
+</head>
+<body>
+<header>
+    <nav>
+        <p><img src="" alt="" srcset=""></p>
+        <ul>
+          <li>
+            <a href="#Nosotros">Nosotros</a>
+          </li>
+          <li>
+            <a href="./anuncios.html">Anuncios</a>
+          </li>
+          <li>
+            <a href="#Blog">Blog</a>
+          </li>
+          <li>
+            <a href="#Contacto">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+</header>
+<main>
+    <div id="titulo">
+        <h1>Administracion</h1>
+    </div>
+    <div class="divImagen">
+        <img src="./img/header.png" alt="">
+    </div>
+      <div id="divFormulario">
+        <fieldset>
+          <legend>Informacion Del Anuncio</legend>
+          <form>
+            <section>
+              <br />
+              <label for="idTitulo">TITULO:</label>
+              <br />
+              <br />
+              <input
+                type="text"
+                placeholder="Titulo"
+                name="titulo"
+                id="idTitulo"
+              />
+              <small></small>
+            </section>
+            <br>
+            <section>
+                <label for="idDescripcion">DESCRIPCION:</label>
+                <br />
+                <br />
+                <input
+                  type="text"
+                  name="descripcion"
+                  id="idDescripcion"
+                  placeholder="Descripcion"
+                />
+                <small></small>
+              </section>
+            <section>
+              <br />
+              <label for="animal">ANIMAL:</label>
+              <br />
+              <br />
+              <input
+                type="radio"
+                name="animal"
+                id="idAnimal"
+                value="PERRO"
+              />PERRO
+              <br />
+              <br />
+              <input
+                type="radio"
+                name="animal"
+                id="idAnimal"
+                value="GATO"
+                checked
+              />GATO
+            </section>
+            <br />
+            <br />
+
+            <section>
+              <br />
+              <label for="idPrecio">PRECIO:</label>
+              <br />
+              <br />
+              <input
+                type="text"
+                name="precio"
+                id="idPrecio"
+                placeholder="Precio"
+              />
+              <small></small>
+            </section>
+
+            <section>
+              <br />
+              <br />
+              <input
+                type="text"
+                name="raza"
+                id="idRaza"
+                placeholder="Raza"
+              />
+              <small></small>
+            </section>
+
+            <section>
+              <br />
+              <br />
+              <input
+                type="date"
+                name="fechaNacimiento"
+                id="idFecha"
+              />
+              <small></small>
+            </section>
+
+            <section>
+              <br />
+              <br />
+              <select name="vacunado" id="idVacuna" aria-placeholder="--ELEGIR--">
+                <option value="si">Si</option>
+                <option value="no">No</option>
+              </select>
+              <small></small>
+            </section>
+            <br />
+            <small id="alertSubmit"></small>
+            <button id="btnGuardar" type="submit">Guardar</button>
+            <button id="btnBorrar">Eliminar</button>
+            <button id="btnCancelar" type="reset">Cancelar</button>
+          </form>
+        </fieldset>
+      </div>
+
+      <div class="loader center" id="spinner" ></div>
+      <div class="divTabla"></div>
+</main>
+<footer>
+    <nav>
+        
+        <ul>
+          <li>
+            <a href="#Nosotros">Nosotros</a>
+          </li>
+          <li>
+            <a href="./anuncios.html">Anuncios</a>
+          </li>
+          <li>
+            <a href="#Blog">Blog</a>
+          </li>
+          <li>
+            <a href="#Contacto">Contacto</a>
+          </li>
+        </ul>
+        <p>Todos los derechos reservados 2019@</p>
+      </nav>
+</footer>
+<script src="./js/app.js" type="module"></script>    
+</body>
+</html>
